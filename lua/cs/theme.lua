@@ -10,23 +10,23 @@ function theme.setup()
         -- Base highlights
         Boolean = { fg = color.color5 },
         Character = { fg = color.color3 },
-        Comment = { fg = color.comment, style = styles.comments },
-        Conditional = { fg = color.color4, style = styles.keywords },
+        Comment = { fg = color.comment, italic = true },
+        Conditional = { fg = color.color4, italic = true },
         Constant = { fg = color.color2 },
         CursorLine = { bg = color.cursorline },
         CursorLineNr = { fg = color.foreground, bg = color.cursorline },
         Directory = { fg = color.color4 },
         Error = { fg = color.color1 },
-        Function = { fg = color.color6, style = styles.functions },
+        Function = { fg = color.color6, bold = true },
         Identifier = { fg = color.color7 },
-        Keyword = { fg = color.color4, style = styles.keywords },
+        Keyword = { fg = color.color4, italic = true },
         LineNr = { fg = color.color8 },
         Normal = { fg = color.foreground, bg = color.background },
         Pmenu = { fg = color.color6, bg = color.cursorline },
         PmenuSel = { fg = color.color1, bg = color.color6 },
         Search = { fg = color.color1, bg = color.color4 },
         String = { fg = color.color2 },
-        Title = { fg = color.color4, style = "bold" },
+        Title = { fg = color.color4, bold = true },
         Type = { fg = color.color3 },
         Visual = { bg = color.color6 },
         WarningMsg = { fg = color.color3 },
@@ -41,7 +41,6 @@ function theme.setup()
         TelescopeBorder = { fg = color.color7 },
         TelescopeSelection = { fg = color.color6, bg = color.cursorline },
     }
-
 
     for group, hl in pairs(theme.highlights) do
         vim.api.nvim_set_hl(0, group, hl)
