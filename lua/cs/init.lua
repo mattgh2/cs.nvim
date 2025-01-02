@@ -1,6 +1,7 @@
 local config = require "cs.config"
 local M = {}
 
+
 function M.load()
 
     vim.cmd([[hi clear]])
@@ -8,7 +9,7 @@ function M.load()
     vim.g.colors_name = "cs"
     vim.o.background = "light"
     vim.o.termguicolors = true
+    require("cs.theme").setup()
 end
--- require("cs.theme").setup()
 
 return M
