@@ -41,4 +41,14 @@ function theme.setup()
         TelescopeSelection = { fg = color.color6, bg = color.cursorline },
     }
 end
+
+  for group, colors in pairs(theme.highlights) do
+    if colors.style then
+      if type(colors.style) == "table" then
+        colors = vim.tbl_extend("force", colors, colors.style)
+      end
+      colors.style = nil
+    end
+    vim.api.nvim_set_hl(0, group, colors)
+  end
 return theme
