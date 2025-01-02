@@ -28,7 +28,7 @@ function theme.setup()
         String = { fg = color.color2 },
         Title = { fg = color.color4, bold = true },
         Type = { fg = color.color3, bold = true},
-        Visual = { bg = color.color6 },
+        Visual = { bg = color.color0 },
         WarningMsg = { fg = color.color3 },
 
         -- LSP
