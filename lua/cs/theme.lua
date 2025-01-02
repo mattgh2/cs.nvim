@@ -5,6 +5,7 @@ function theme.setup()
     local styles = { comments = "italic", functions = "bold", keywords = "italic", variables = "NONE", }
 
     local color = require("cs.palette").colors
+
     theme.highlights = {
         -- Base highlights
         Boolean = { fg = color.color5 },
@@ -40,15 +41,10 @@ function theme.setup()
         TelescopeBorder = { fg = color.color7 },
         TelescopeSelection = { fg = color.color6, bg = color.cursorline },
     }
+
+    for group, hl in pairs(theme.highlights) do
+        vim.api.nvim_set_hl(0, group, hl)
+    end
 end
 
-  for group, colors in pairs(theme.highlights) do
-    if colors.style then
-      if type(colors.style) == "table" then
-        colors = vim.tbl_extend("force", colors, colors.style)
-      end
-      colors.style = nil
-    end
-    vim.api.nvim_set_hl(0, group, colors)
-  end
 return theme

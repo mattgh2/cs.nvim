@@ -9,6 +9,7 @@ function M.load()
     vim.g.colors_name = "cs"
     vim.o.background = "light"
     vim.o.termguicolors = true
+
     require("cs.theme").setup()
 end
 
