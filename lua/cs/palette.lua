@@ -23,7 +23,11 @@ M.colors = {
   color19 = "#f27900",
   color20 = "#6f00a6",
   color21 = "#00a600",
+  color22 = "#2aa198",
+  color23 = "#b57edc",
+  color24 = "#268bd2",
   comment = "#404749",
+
   black = "#000000",
   background = "#f6f2ee",
   foreground = "#000000",

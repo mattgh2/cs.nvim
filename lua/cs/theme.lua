@@ -23,7 +23,7 @@ function theme.setup()
         Constant = { fg = color.color20},
         String = { fg = color.color2 },
         Special = { link = "SpecialKey" },
-        Function = { fg = color.color11, bold = true},
+        Function = { fg = color.color24, bold = true},
         Error = { fg = color.color8 },
         -- Keyword = { fg = color.color12, bold = true },
         Delimiter = { fg = color.black },
