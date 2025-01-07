@@ -20,10 +20,10 @@ function theme.setup()
         Character = { link = "String" },
         Comment = { fg = color.comment },
         Statement = { fg = color.color3, bold = true },
-        Constant = { fg = color.color20},
+        Constant = { fg = color.color26, bold = true},
         String = { fg = color.color2 },
         Special = { link = "SpecialKey" },
-        Function = { fg = color.color24, bold = true},
+        Function = { fg = color.color27, bold = true},
         Error = { fg = color.color8 },
         -- Keyword = { fg = color.color12, bold = true },
         Delimiter = { fg = color.black },
@@ -31,7 +31,7 @@ function theme.setup()
         Type = { fg = color.color3, bold = true},
         Identifier = { fg = color.black},
         Todo = { fg = color.color11 },
-        PreProc = { fg = color.color4 },
+        PreProc = { fg = color.color12},
         underline = { underline = true },
 
         MatchParen = { fg = color.color3, bold = true, underline = true},
@@ -99,6 +99,8 @@ function theme.setup()
 		["@constant.builtin"] = { link = "Type" },
 		["@constant.macro"] = { link = "Define" },
 
+        ["@nclude"] = { link = "Constant"},
+
 		["@string"] = { link = "String" },
 		["@string.documentation"] = { link = "String" },
 		["@string.regexp"] = { link = "String" },
@@ -121,7 +123,7 @@ function theme.setup()
 
 		["@operator"] = { link = "Type" },
 
-		["@attribute"] = { link = "PreProc" },
+		["@attribute"] = { link = "Type" },
 		["@property"] = { link = "Identifier" },
 
 		["@function"] = { link = "Function" },
