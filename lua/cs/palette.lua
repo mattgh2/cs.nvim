@@ -33,7 +33,7 @@ M.colors = {
     comment = "#404749",
 
     black = "#000000",
-    background = "#f6f2ee",
+    background = "#ffffff",
     foreground = "#000000",
     cursorline = "#242e32",
     none = "NONE",
