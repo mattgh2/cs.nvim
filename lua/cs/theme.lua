@@ -197,7 +197,7 @@ function theme.setup()
 
 
         -- nvim-cmp
-		CmpItemAbbr = { fg = color.blue, bold = true },
+		CmpItemAbbr = { fg = color.blue},
 		CmpItemAbbrDeprecated = { fg = color.orange },
 		CmpItemAbbrMatch = { link = "Identifier" },
 		CmpItemAbbrMatchFuzzy = { link = "CmpItemAbbrMatch" },

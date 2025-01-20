@@ -18,7 +18,7 @@ M.colors = {
 
     black = "#000000",
     background = "#ffffff",
-    freground = "#000000",
+    foreground = "#000000",
     cursorline = "#242e32",
     none = "NONE",
 }
