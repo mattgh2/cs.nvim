@@ -18,9 +18,7 @@ function theme.setup()
 
         Boolean = { fg = color.blue },
         String = { fg = color.red },
-        Character = { link = "String" },
-        Comment = { fg = color.comment },
-        Statement = { fg = color.pink},
+        Character = { link = "String" }, Comment = { fg = color.comment }, Statement = { fg = color.pink},
 
         Constant = { fg = color.turquoise},
         Special = { link = "SpecialKey" },
@@ -38,7 +36,7 @@ function theme.setup()
         MatchParen = { fg = color.black, bold = true, underline = true},
 
 
-        LineNr = { fg = color.turquoise },
+        LineNr = { fg = color.darkerturquoise },
 		WinSeparator = { fg = color.black },
 
         SignColumn = { link = "LineNr"},
@@ -61,7 +59,7 @@ function theme.setup()
 
         Search = { fg = color.red, bg = color.blue },
         Title = { fg = color.turquoise, bold = true },
-        Visual = { bg = color.gray },
+        Visual = { bg = color.black },
         WarningMsg = { fg = color.blue },
         ModeMsg = { fg = color.blue},
 
@@ -100,7 +98,8 @@ function theme.setup()
 		["@constant.builtin"] = { link = "Type" },
 		["@constant.macro"] = { link = "Define" },
 
-        ["@nclude"] = { link = "Constant"},
+
+        ["@include"] = { link = "Constant"},
 
 		["@string"] = { link = "String" },
 		["@string.documentation"] = { link = "String" },
@@ -114,7 +113,7 @@ function theme.setup()
 		["@character"] = { link = "Character" },
 		["@character.special"] = { link = "SpecialChar" },
 
-        ["@module"] = { link = "Type" },
+        ["@module"] = { link = "Constant" },
 		["@module.builtin"] = { link = "Include" },
 		["@label"] = { link = "Label" },
 

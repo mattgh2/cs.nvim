@@ -2,11 +2,12 @@ local M = {}
 
 M.colors = {
     blue = "#0000cd",
-    yellow = "#E5C07B",
-    pink = "#ff00ff",
+    yellow = "#996515",
+    pink = "#a933dc",
     lightpink = "#fe90c9",
-    turquoise = "#40d5c8",
-    red = "#d82727",
+    turquoise = "#008080",
+    darkerturquoise = "#006767",
+    red = "#b82121",
     error = "#ff0000",
     orange = "#f27900",
     gray = "#e5e5e5",
