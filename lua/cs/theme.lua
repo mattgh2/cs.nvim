@@ -59,7 +59,7 @@ function theme.setup()
 
         Search = { fg = color.red, bg = color.blue },
         Title = { fg = color.turquoise, bold = true },
-        Visual = { bg = color.black },
+        Visual = { bg = color.gray },
         WarningMsg = { fg = color.blue },
         ModeMsg = { fg = color.blue},
 
