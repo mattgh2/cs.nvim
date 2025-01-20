@@ -13,7 +13,7 @@ function theme.setup()
         Normal = { fg = color.foreground, bg = color.background },
         NormalFloat = { link = "Normal" },
 
-        SpecialKey = { fg = color.color3 },
+        SpecialKey = { fg = color.blue },
 
 
         Boolean = { fg = color.blue },
