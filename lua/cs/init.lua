@@ -1,4 +1,4 @@
-local config = require "cs.config"
+-- local config = require "cs.config"
 local M = {}
 function M.load(name)
 
