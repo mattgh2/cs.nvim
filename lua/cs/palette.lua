@@ -14,6 +14,7 @@ M.colors = {
     green = "#2F8D46",
     lightgreen = "#00cd00",
 
+
     comment = "#404749",
 
     black = "#000000",

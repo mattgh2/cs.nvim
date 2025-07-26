@@ -4,7 +4,7 @@ function theme.setup()
 
     local styles = { comments = "italic", functions = "bold", keywords = "italic", variables = "NONE", }
 
-    local color = require("cs.palette").colors
+    local color = require("cs.cfpalette").colors
 
     theme.highlights = {
         ----------------------------------------
@@ -13,30 +13,32 @@ function theme.setup()
         Normal = { fg = color.foreground, bg = color.background },
         NormalFloat = { link = "Normal" },
 
-        SpecialKey = { fg = color.blue },
+        SpecialKey = { fg = color.cyan },
 
 
-        Boolean = { fg = color.blue },
-        String = { fg = color.red },
-        Character = { link = "String" }, Comment = { fg = color.comment }, Statement = { fg = color.pink},
+        Boolean = { fg = color.cyan },
+        String = { fg = color.cyan },
+        Character = { link = "String" },
+        Comment = { fg = color.comment },
+        Statement = { fg = color.lightorange, bold = true},
 
-        Constant = { fg = color.turquoise},
+        Constant = { fg = color.cyan, bold = true},
         Special = { link = "SpecialKey" },
         Function = { fg = color.yellow},
         Error = { fg = color.error },
         -- Keyword = { fg = color.color12, bold = true },
-        Delimiter = { fg = color.black },
-        Operator = { fg = color.black},
-        Type = { fg = color.blue},
-        Identifier = { fg = color.black},
-        Todo = { fg = color.orange },
-        PreProc = { fg = color.pink},
+        Delimiter = { fg = color.white },
+        Operator = { fg = color.white},
+        Type = { fg = color.yellow},
+        Identifier = { fg = color.white},
+        Todo = { fg = color.darkyellow },
+        PreProc = { fg = color.green},
         underline = { underline = true },
 
-        MatchParen = { fg = color.black, bold = true, underline = true},
+        MatchParen = { fg = color.cyan, bold = true, underline = true},
 
 
-        LineNr = { fg = color.darkerturquoise },
+        LineNr = { fg = color.cyan },
 		WinSeparator = { fg = color.black },
 
         SignColumn = { link = "LineNr"},
@@ -51,10 +53,10 @@ function theme.setup()
         Cursor = { bg = color.cursorline},
         TermCursor = { bg = color.cursorline},
         CursorLine = { bg = color.cursorline },
-        CursorLineNr = { fg = color.black, bg = color.cursorline },
+        CursorLineNr = { fg = color.white, bg = color.cursorline },
         Directory = { fg = color.black },
 
-        Pmenu = { fg = color.black, bg = color.background },
+        Pmenu = { fg = color.white, bg = color.background },
         PmenuSel = { fg = color.red, bg = color.gray },
 
         Search = { fg = color.red, bg = color.blue },
@@ -113,7 +115,7 @@ function theme.setup()
 		["@character"] = { link = "Character" },
 		["@character.special"] = { link = "SpecialChar" },
 
-        ["@module"] = { link = "Constant" },
+        ["@module"] = { fg = color.yellow },
 		["@module.builtin"] = { link = "Include" },
 		["@label"] = { link = "Label" },
 
@@ -123,7 +125,7 @@ function theme.setup()
 
 		["@operator"] = { link = "Type" },
 
-		["@attribute"] = { link = "Type" },
+		["@attribute"] = { fg = color.pink },
 		["@property"] = { link = "Identifier" },
 
 		["@function"] = { link = "Function" },
@@ -197,19 +199,19 @@ function theme.setup()
 
 
         -- nvim-cmp
-		CmpItemAbbr = { fg = color.blue},
+		CmpItemAbbr = { fg = color.white},
 		CmpItemAbbrDeprecated = { fg = color.orange },
-		CmpItemAbbrMatch = { link = "Identifier" },
+		CmpItemAbbrMatch = { link = "Constant" },
 		CmpItemAbbrMatchFuzzy = { link = "CmpItemAbbrMatch" },
 
-		CmpItemKindText = { fg = color.black },
-		CmpItemKindSnippet = { fg = color.cursorline },
-		CmpItemKindConstant = { fg = color.blue },
-		CmpItemKindVariable = { fg = color.blue },
-		CmpItemKindKeyword = { fg = color.oragne },
+		CmpItemKindText = { fg = color.white },
+		CmpItemKindSnippet = { fg = color.white },
+		CmpItemKindConstant = { fg = color.cyan },
+		CmpItemKindVariable = { fg = color.darkyellow },
+		CmpItemKindKeyword = { fg = color.orange },
 		CmpItemKindMethod = { fg = color.lightpink },
-		CmpItemKindFunction = { link = "CmpItemKindMethod" },
-		CmpItemKindConstructor = { link = "CmpItemKindMethod" },
+		CmpItemKindFunction = { fg = color.green },
+		CmpItemKindConstructor = { fg = color.cyan },
 		CmpItemKindClass = { fg = color.pink },
 		CmpItemKindInterface = { link = "CmpItemKindClass" },
 		CmpItemKindModule = { link = "CmpItemKindClass" },
