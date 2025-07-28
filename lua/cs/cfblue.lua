@@ -6,6 +6,18 @@ function theme.setup()
 
     local color = require("cs.cfpalette").colors
 
+    vim.g.terminal_color_0  = "#1e1e1e"
+    vim.g.terminal_color_1  = "#ff5f5f"
+    vim.g.terminal_color_2  = "#5fff87"
+    vim.g.terminal_color_3  = "#ffaf00"
+    vim.g.terminal_color_4  = "#5fafff"
+    vim.g.terminal_color_5  = "#ff5fff"
+    vim.g.terminal_color_6  = "#5fffff"
+    vim.g.terminal_color_7  = "#ffffff"
+    -- optional brighter variants:
+    vim.g.terminal_color_8  = "#808080"
+    vim.g.terminal_color_9  = "#ff0000"
+
     theme.highlights = {
         ----------------------------------------
         --          Base Highlights           --
