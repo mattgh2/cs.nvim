@@ -56,7 +56,7 @@ function theme.setup()
         CursorLineNr = { fg = color.white, bg = color.cursorline },
         Directory = { fg = color.black },
 
-        Pmenu = { fg = color.white, bg = color.background },
+        Pmenu = { fg = color.black, bg = color.background },
         PmenuSel = { fg = color.red, bg = color.gray },
 
         Search = { fg = color.red, bg = color.blue },
